@@ -8,7 +8,6 @@ def process(path_file, instance):
             return None
 
     list = txt_importer(path_file)
-
     file_dict = {
         "nome_do_arquivo": path_file,
         "qtd_linhas": len(list),
@@ -16,7 +15,6 @@ def process(path_file, instance):
     }
 
     instance.enqueue(file_dict)
-
     print(file_dict)
 
 
